@@ -1,0 +1,4 @@
+PyQt5
+networkx
+matplotlib
+opencv-python
