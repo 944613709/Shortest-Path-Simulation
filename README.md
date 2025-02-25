@@ -1,39 +1,89 @@
-# Shortest Path Simulation
- 网络拓扑图最短路径模拟
+# 网络拓扑图最短路径模拟 | Shortest Path Simulation
+
+[English](README_EN.md) | 简体中文
+
+## 项目简介
+
+这是一个基于 Python 的网络拓扑图最短路径模拟工具，可以直观地展示和分析网络中的最短路径问题。该工具支持多种经典路由算法，并提供图形化界面进行交互。
 
 ## 功能特点
 
-- 创建和编辑网络拓扑图。
-- 运行 Dijkstra 和 Bellman-Ford 算法。
-- 图形化展示最短路径选择。
-- 交互式用户界面。
+- 💡 直观的图形用户界面
+- 🔨 灵活的网络拓扑图创建和编辑功能
+- 🚀 支持多种经典路由算法：
+  - Dijkstra 算法
+  - Bellman-Ford 算法
+- 📊 实时图形化展示最短路径
+- 🎯 交互式节点和边的操作
+- 📝 详细的路由表显示
+
+## 系统要求
+
+- Python 3.x
+- 操作系统：Windows/Linux/MacOS
 
 ## 安装指南
 
-### 先决条件
+### 1. 克隆仓库
 
-确保您的系统已经安装了 Python（版本 3.x）和以下依赖库：
+```bash
+git clone https://github.com/yourusername/Shortest-Path-Simulation.git
+cd Shortest-Path-Simulation
+```
 
-- PyQt5
-- NetworkX
-- Matplotlib
+### 2. 安装依赖
 
-# 使用须知
+确保您的系统已经安装了以下依赖库：
 
-pip install requirment.txt
+```bash
+pip install -r requirements.txt
+```
 
-运行main.py
+主要依赖：
+- PyQt5 - GUI框架
+- NetworkX - 图形网络处理
+- Matplotlib - 图形可视化
+- OpenCV-Python - 图像处理支持
 
-1. 启动应用程序后，您可以通过输入框添加节点和边来创建网络拓扑。
-2. 使用下拉菜单选择起始节点、目的节点和路由算法。
-3. 点击“运行算法”按钮查看最短路径的图形化展示。
+## 使用说明
 
-# 截图
+1. 运行程序：
+   ```bash
+   python main.py
+   ```
 
-1.初始化
+2. 基本操作：
+   - 添加节点：在输入框中输入节点名称，点击"Add Node"
+   - 添加边：输入格式为"node1-node2"，点击"Add Edge"
+   - 选择算法：从下拉菜单中选择所需算法
+   - 选择起始和目标节点：使用相应的下拉菜单
+   - 运行算法：点击"Run Algorithm"查看结果
 
-![image-20231226122944520](https://farsblog.oss-cn-beijing.aliyuncs.com/PicGo/202312261229617.png)
+## 功能展示
 
-2.加入边和节点，选择算法，运行
+### 1. 初始界面
+![初始界面](https://farsblog.oss-cn-beijing.aliyuncs.com/PicGo/202312261229617.png)
 
-![image-20231226123058390](https://farsblog.oss-cn-beijing.aliyuncs.com/PicGo/202312261230442.png)
+### 2. 运行效果
+![运行效果](https://farsblog.oss-cn-beijing.aliyuncs.com/PicGo/202312261230442.png)
+
+## 技术实现
+
+- 使用 PyQt5 构建图形用户界面
+- 采用 NetworkX 进行图形数据结构管理
+- 使用 Matplotlib 实现图形可视化
+- 实现了 Dijkstra 和 Bellman-Ford 两种经典最短路径算法
+
+## 贡献指南
+
+欢迎提交问题和改进建议！如果您想贡献代码：
+
+1. Fork 本仓库
+2. 创建您的特性分支
+3. 提交您的改动
+4. 推送到您的分支
+5. 创建 Pull Request
+
+## 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
